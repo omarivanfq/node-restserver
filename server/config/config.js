@@ -15,10 +15,10 @@ process.env.NODE_DEV = process.env.NODE_DEV || 'dev';
 
 let urlDB;
 
-/*if (process.env.NODE_DEV == 'dev') {
+if (process.env.NODE_DEV === 'dev') {
     urlDB = 'mongodb://localhost:27017/cafe';
 }
-else {*/
-    urlDB = 'mongodb+srv://omarivan:EZ2CoRANf0z6v9e3@cluster0-zrzaj.mongodb.net/cafe';
-//}
+else {
+    urlDB = process.env.MONGO_URI;
+}
 process.env.URLDB = urlDB;

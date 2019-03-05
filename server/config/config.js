@@ -8,7 +8,7 @@ process.env.PORT = process.env.PORT || 3000;
 // ============================
 
 console.log( " > > > > > > > > NODE_DEV = " + process.env.NODE_DEV + "  < < < < < < < < <")
-process.env.NODE_DEV = process.env.NODE_DEV || 'dev';
+process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 
 // ============================
 //  BASE DE DATOS
@@ -16,7 +16,7 @@ process.env.NODE_DEV = process.env.NODE_DEV || 'dev';
 
 let urlDB;
 
-if (process.env.NODE_DEV === 'dev') {
+if (process.env.NODE_ENV === 'dev') {
     console.log( " > > > > > > > > A < < < < < < < < <")
     urlDB = 'mongodb://localhost:27017/cafe';
 }

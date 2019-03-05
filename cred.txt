@@ -1,0 +1,4 @@
+omarivan
+EZ2CoRANf0z6v9e3
+
+mongodb+srv://omarivan:EZ2CoRANf0z6v9e3@cluster0-zrzaj.mongodb.net/admin

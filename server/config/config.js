@@ -7,6 +7,7 @@ process.env.PORT = process.env.PORT || 3000;
 //  Entorno
 // ============================
 
+console.log(process.env.NODE_DEV)
 process.env.NODE_DEV = process.env.NODE_DEV || 'dev';
 
 // ============================
@@ -21,4 +22,5 @@ if (process.env.NODE_DEV === 'dev') {
 else {
     urlDB = process.env.MONGO_URI;
 }
+
 process.env.URLDB = urlDB;
